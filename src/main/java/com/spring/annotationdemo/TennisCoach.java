@@ -12,7 +12,7 @@ import javax.swing.*;
 public class TennisCoach implements Coach {
     //field injection
     @Autowired
-    @Qualifier("happyFortuneService")
+    @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
 
