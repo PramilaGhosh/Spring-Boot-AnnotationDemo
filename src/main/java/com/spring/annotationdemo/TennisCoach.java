@@ -1,6 +1,7 @@
 package com.spring.annotationdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -9,7 +10,9 @@ import javax.swing.*;
 //if we not specify bean id then it automatically takes className as a bean id but first letter is small letter in the class in bean
 @Component
 public class TennisCoach implements Coach {
+    //field injection
     @Autowired
+    @Qualifier("happyFortuneService")
     private FortuneService fortuneService;
 
 
