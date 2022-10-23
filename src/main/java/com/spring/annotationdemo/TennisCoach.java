@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 
 //if we not specify bean id then it automatically takes className as a bean id but first letter is small letter in the class in bean
-@Component("thatSillyCoach")
+@Component
 public class TennisCoach implements Coach{
     @Override
     public String getDailyWorkout() {
